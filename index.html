@@ -1,0 +1,239 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	    <meta charset="utf-8" />
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Imbues</title>
+	    <link rel="stylesheet" type="text/css" href="Content/bootstrap.min.css">
+	    <link rel="stylesheet" type="text/css" href="Content/bootstrap-theme.min.css">
+	    <link rel="stylesheet" type="text/css" href="Content/Site.css">
+	    <!--link rel="stylesheet/less" type="text/css" href="Content/custom.less" />    
+	    <script type="text/javascript" src="Scripts/less.js"></script-->
+	    <script type="text/javascript" src="Scripts/modernizr-2.8.3.js" ></script>
+	</head>
+	<body>
+		<h1>Calcular Imbues</h1>
+	  	<button class="btn btn-primary btn-precios" type="button" data-toggle="collapse" data-target="#prices" aria-expanded="false" aria-controls="prices">Precios</button>
+		<div class="collapse" id="prices">
+		  <div class="card card-body container">
+		  	<div class="imbue imbue--vampirism">
+		  		<h4>Vampirism Imbue</h4>
+		    	<div class="input-wrapper">
+		    		<label for="vampireTeeth">Vampire Teeth</label>
+		    		<input type="text" id="vampireTeeth" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="bloodyPincer">Bloody Pincer</label>
+		    		<input type="text" id="bloodyPincer" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="deadBrain">Piece of Dead Brain</label>
+		    		<input type="text" id="deadBrain" />
+		    	</div>
+		  	</div>
+		  	<div class="imbue imbue--void">
+		  		<h4>Void Imbue</h4>
+		    	<div class="input-wrapper">
+		    		<label for="ropeBelt">Rope Belt</label>
+		    		<input type="text" id="ropeBelt" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="silencerClaw">Silencer Claw</label>
+		    		<input type="text" id="silencerClaw" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="grimeleechWing">Grimeleech Wing</label>
+		    		<input type="text" id="grimeleechWing" />
+		    	</div>
+		  	</div>
+		  	<div class="imbue imbue--strike">
+		  		<h4>Strike Imbue</h4>
+		    	<div class="input-wrapper">
+		    		<label for="protectiveCharm">Protective Charm</label>
+		    		<input type="text" id="protectiveCharm" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="sabreteeth">Sabreteeth</label>
+		    		<input type="text" id="sabreteeth" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="vexclawTalon">Vexclaw Talon</label>
+		    		<input type="text" id="vexclawTalon" />
+		    	</div>
+		  	</div>
+		  	<div class="imbue imbue--club">
+		  		<h4>Club Imbue</h4>
+		    	<div class="input-wrapper">
+		    		<label for="cylcopsToe">Cyclops Toe</label>
+		    		<input type="text" id="cylcopsToe" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="ogreNoseRing">Ogre Nose Ring</label>
+		    		<input type="text" id="ogreNoseRing" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="warmasterWristguard">Warmaster's Wristguard</label>
+		    		<input type="text" id="warmasterWristguard" />
+		    	</div>
+		  	</div>
+		  	<div class="imbue imbue--distance">
+		  		<h4>Distance Imbue</h4>
+		    	<div class="input-wrapper">
+		    		<label for="elvenScoutingGlasses">Elven Scouting Glasses</label>
+		    		<input type="text" id="elvenScoutingGlasses" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="elvenHoof">Elven Hoof</label>
+		    		<input type="text" id="elvenHoof" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="metalSpike">Metal Spike</label>
+		    		<input type="text" id="metalSpike" />
+		    	</div>
+		  	</div>
+		  	<div class="imbue imbue--magic">
+		  		<h4>Magic Level Imbue</h4>
+		    	<div class="input-wrapper">
+		    		<label for="elvishTalisman">Elvish Talisman</label>
+		    		<input type="text" id="elvishTalisman" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="brokenShamanicStaff">Broken Shamanic Staff</label>
+		    		<input type="text" id="brokenShamanicStaff" />
+		    	</div>
+		    	<div class="input-wrapper">
+		    		<label for="strandOfMedusaHair">Strand of Medusa Hair</label>
+		    		<input type="text" id="strandOfMedusaHair" />
+		    	</div>
+		  	</div>
+		  	<div class="gold-token">
+		  		<div class="input-wrapper">
+		    		<label for="goldToken">Gold Token</label>
+		    		<input type="text" id="goldToken" />
+		    	</div>
+		  	</div>
+		  </div>
+		</div>
+	    <div class="container body-content">
+	    	<div class="imbuiments">
+		    	<div class="selects-row">
+		    		<div class="imbu-add">
+			    		<label for="imbuimentsAdd">Imbuiments</label>
+				    	<select name="imbuimentsAdd" id="imbuimentsAdd" multiple>
+							<option value="vampirism" selected>Vampirism</option>
+							<option value="void">Void</option>
+							<option value="strike">Strike</option>
+							<option value="magic">Magic</option>
+							<option value="distance">Distance</option>
+							<option value="club">Club</option>
+						</select>
+					</div>
+					<div class="button-list">
+						<a href="#" class="btnAdd btn-success">Agregar</a>
+						<a href="#" class="btnDel btn-danger">Eliminar</a>
+					</div>
+					<div class="imbu-del">
+						<label for="imbuimentsDel">A calcular</label>
+						<select name="imbuimentsDel" id="imbuimentsDel" multiple>
+						</select>
+					</div>
+				</div>
+			</div>
+			<button class="btn-primary btn-calcular btn-warning">Calcular</button>
+			<div class="precios">
+				<div class="calculated-info"></div>
+			</div>
+			<div class="items">
+				
+			</div>
+		</div>
+	</body>
+
+    <script src="Scripts/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+	<script src="json.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var imbues = [];
+		var final = [];
+		Object.keys(product).forEach(function(i,e){
+			$("#" + i).val(product[i][0]);
+		});
+		$('.btnAdd').click(function(){
+			var toAdd = $('#imbuimentsAdd').val()[0];
+			$('#imbuimentsDel').append('<option value="'+toAdd+'">'+toAdd+'</option>');
+			imbues.push(toAdd);
+		});
+		$('.btnDel').click(function(){
+			var selected = $('#imbuimentsDel').val()[0];
+			imbues.splice(imbues.indexOf(selected),1);
+			rebuildList();
+		});
+		$('.btn-calcular').click(function(){
+			$('.precios').show();
+			$('.calculated-info').html(getData());
+			$('.items').html(getProducts());
+		});
+		function rebuildList(){
+			$('#imbuimentsDel').empty();
+			imbues.forEach(function(i,e){
+				$('#imbuimentsDel').append('<option value="'+i+'">'+i+'</option>');
+			});
+		}
+		function getData(){
+			final = [];
+			imbues.forEach(function(i){
+				var sum = 0;
+				var last = 0;
+				$('[class*=--'+i+'] input').each(function(ix,input){
+					var item = input.id;
+					if (ix == 2){
+						last = product[item][0] * product[item][1];
+					}
+					sum += product[item][0] * product[item][1];
+
+				});
+				var temp = [];
+				temp.push(["Comprar Items", sum]);
+				temp.push(["4 Tokens", product["goldToken"][0] * 4 + last]);
+				temp.push(["6 Tokens", product["goldToken"][0] * 6]);
+				temp.sort(function (a, b) {
+				 if (a[1] > b[1]) {
+				    return 1;
+				  }
+				  if (a[1] < b[1]) {
+				    return -1;
+				  }
+				  return 0;
+				});
+				final.push([i,temp, temp[0]]);
+			});
+			return buildHTML();	
+		}
+		function buildHTML(){
+			var html = '';
+			final.forEach(function(e){
+				html += '<div class="imbu-price">' +
+				        '<h3>' + e[0] + '</h3>' +
+				        '<span class="best-price">Mejor Precio: '+ e[2][0] +" "+ e[2][1] +'</span>' +
+				        '<span class="final-list">Precios</span>' +
+				        '<span>'+ e[1][0][0] +": "+ e[1][0][1] +'</span>' +
+				        '<span>'+ e[1][1][0] +": "+ e[1][1][1] +'</span>' +
+				        '<span>'+ e[1][2][0] +": "+ e[1][2][1] +'</span>' +
+				        '</div>';
+			});
+			return html;
+		}
+		function getProducts(){
+			var list = "";
+			imbues.forEach(function(i){
+				$('[class*=--'+i+'] input').each(function(ix,input){
+					list += product[input.id][1] + " " + input.parentNode.innerText + ", " ;
+				});
+			});
+			list += " + " + imbues.length * 150 + "k";
+			return list;
+		}
+	</script>
+</html>
